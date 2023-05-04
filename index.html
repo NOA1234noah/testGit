@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script type="module" src="js/appTask.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="display-3">Tasks</h1>
+    <form id="id_form" class="col-md-6 border p-2">
+      <label>name task:</label>
+      <input id="id_name" type="text" class="form-control ">
+      <label>hour:</label>
+      <input id="id_hour" type="time" value="1" class="form-control ">
+      <div>
+        <button class="btn btn-outline-success">Add Task</button>
+        <button class="btn btn-outline-warning m-2" id="reset_btn" type="button">Reset all</button>
+      </div>
+    </form>
+    <div class="list">
+      <h2 class="display-6">List of pr Tasks you add</h2>
+      <table class="table w-75 table-hover ">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>action</th>
+            <th>name</th>
+            <th>hour</th>
+          </tr>
+        </thead>
+        <tbody id="id_row">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
