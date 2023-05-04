@@ -7,6 +7,7 @@ export default class TaskClass {
         this.hour = _item.hour;
     }
     render(updateUi,task_ar) {
+        console.log("render");
         let tr = document.createElement("tr");
         let tdName = document.createElement("td");
         let tdHour = document.createElement("td");
